@@ -64,7 +64,7 @@ function makeOpenAIRequest(openAIAPIKey, body) {
         .catch(error => console.log('error', error)); // logs an error message to the console if something goes wrong
 }
 
-jQuery(window).load(function () {
+$(window).load(function () {
     initializeOpenAIConfiguration();
     if (openAIAPIKey == null) requestOpenAIConfiguration(); // requests for OpenAI configuration if openAIAPIKey is not set
 });
